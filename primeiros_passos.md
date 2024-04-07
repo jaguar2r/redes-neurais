@@ -133,6 +133,7 @@ NLP é uma área vasta e em rápido crescimento, com aplicações que vão desde
 
 
 ## Referências
+- [Deep Residual Learning for Image Recognition] https://arxiv.org/abs/1512.03385
 - [Uma introdução a Redes Neurais] https://matheusjorge.github.io/introducao-redes-neurais/
 - [Funções de ativação] https://matheusjorge.github.io/funcoes-ativacao/
 - [Regressão Logística] https://matheusfacure.github.io/2017/02/25/regr-log/
