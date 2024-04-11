@@ -163,3 +163,5 @@ cython_debug/
 teste_entrevista.txt
 DeepResidualLearningImageRecognition.pdf
 instrucoes.md
+archive/*
+tiny-imagenet-200/*
