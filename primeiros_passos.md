@@ -134,6 +134,7 @@ NLP é uma área vasta e em rápido crescimento, com aplicações que vão desde
 
 ## Referências
 - [Deep Residual Learning for Image Recognition] https://arxiv.org/abs/1512.03385
+- [Gaussian Error Linear Units (GELUs)] https://arxiv.org/abs/1512.03385
 - [Uma introdução a Redes Neurais] https://matheusjorge.github.io/introducao-redes-neurais/
 - [Funções de ativação] https://matheusjorge.github.io/funcoes-ativacao/
 - [Regressão Logística] https://matheusfacure.github.io/2017/02/25/regr-log/
@@ -241,10 +242,7 @@ class SimpleCNN(nn.Module):
 ### Ajustando Parâmetros de Convolução (Kernel Size, Stride, Padding)
 Alterar o tamanho do kernel (`kernel_size`), o passo da convolução (`stride`), e o preenchimento (`padding`) também afeta a quantidade de convolução aplicada aos dados de entrada. Um kernel maior pode capturar características mais amplas, enquanto um stride maior reduz as dimensões espaciais da saída. O padding pode ser ajustado para controlar o tamanho da saída.
 
-Lembre-se de que todas essas alterações devem ser feitas considerando o equilíbrio entre a capacidade do modelo, a complexidade computacional e o risco de overfitting. A escolha dos parâmetros dependerá do problema específico que você está tentando resolver e do conjunto de dados com o qual está trabalhando.
-
-
-
+Lembrar que todas essas alterações devem ser feitas considerando o equilíbrio entre a capacidade do modelo, a complexidade computacional e o risco de overfitting. A escolha dos parâmetros dependerá do problema específico que você está tentando resolver e do conjunto de dados com o qual está trabalhando.
 
 Alterar a quantidade de redes internas, frequentemente referido como modificar a arquitetura de uma Rede Neural Profunda (DNN) ou uma Rede Neural Convolucional (CNN), envolve modificar a profundidade da rede, isto é, o número de camadas ocultas, ou ajustar a complexidade da rede, por meio da adição ou remoção de blocos de camadas que realizam funções específicas. Essas modificações são cruciais para ajustar a capacidade do modelo de aprender padrões de dados de complexidades variadas. Aqui estão algumas estratégias para fazer isso:
 
@@ -329,7 +327,13 @@ Estas redes mostraram que é possível treinar redes neurais muito profundas com
 ## Instalação ambiente conda
 
 ```
-conda create -n env_pytorch python=3.10
-conda activate env_pytorch
+conda create -n neurais_env python=3.10
+conda activate neurais_env
 conda install pytorch::pytorch
+conda install pytorch::torchvision
+conda install conda-forge::matplotlib
+conda install conda-forge::numpy
+conda install conda-forge::opencv
+conda install anaconda::scikit-learn
+
 ```
